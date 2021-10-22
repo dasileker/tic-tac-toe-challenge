@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <%# <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> %>
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
@@ -13,7 +13,7 @@
 
   <body>
 
-  <div class="row justify-content-md-center">
+  <%# <div class="row justify-content-md-center">
     <div class="col-md-auto">
       <h1 class='m-auto text-primary'>TicTacToe</h1>
     </div>
@@ -23,14 +23,14 @@
     <div class="col-md-auto">
       <h3>Select tile to get started!</h3>
     </div>
-  </div>
-  <%# <div class='row'>
+  </div> %>
+  <div class='row'>
     <div class='col-xs-12 col-md-4 col-lg-4 col-lg-offset-4'>
         <h1 align='center'>TicTacToe</h1>
         <h3 align='center'>Select tile to get started!</h3>
         <hr />
       </div>
-    </div> %>
+    </div>
     <%= yield %>
   </body>
 </html>
