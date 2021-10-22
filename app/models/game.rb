@@ -1,5 +1,5 @@
 class Game < ApplicationRecord
-  WINNIG_COMBINATIONS  = [
+  WINNING_COMBINATIONS = [
     [1,2,3], [4,5,6], [7,8,9],
     [1,4,7], [2,5,8], [3,6,9],
     [1,5,9], [3,5,7]
@@ -17,12 +17,10 @@ class Game < ApplicationRecord
       m.position.odd?
     end.pluck(:tile)
 
-    WINNIG_COMBINATIONS.select do |array|
+    WINNING_COMBINATIONS.select do |array|
       (array - even_moves).empty? || (array - odd_moves).empty?
     end.any?
-
   end
 
-  has_many :moves, -> { order("position ASC")}
-
+  has_many :moves, -> { order("position ASC") }
 end
