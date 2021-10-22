@@ -1,5 +1,5 @@
 class MoveController < ApplicationController
   def index
-    moves = Move.all
+    @moves = Move.all
   end
 end
