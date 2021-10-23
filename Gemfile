@@ -33,7 +33,7 @@ gem 'underscore-rails'
 gem 'react-bootstrap-rails', '~> 0.30.2'
 
 gem 'acts_as_list'
-
+#
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
